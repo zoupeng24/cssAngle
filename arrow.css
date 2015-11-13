@@ -3,7 +3,7 @@ body {
   margin: 0;
   position: relative;
 }
-.X {
+.x {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -17,16 +17,16 @@ body {
   border-right: 1px dashed #000;
   z-index: 10;
 }
-div {
+.arrow {
   position: absolute;
   z-index: 13;
-  left: calc(50% -  100px );
+  left: calc(50% -  105px );
   top: calc(50% -  86.60254038px );
   width: 200px;
   height: 173.20508076px;
   background: rgba(0, 255, 0, 0.1);
   border-color: #00ff00;
-  border-width: 0 0 2px 2px;
+  border-width: 0 0 10px 10px;
   border-style: solid;
   transform: rotate(-30deg) skewX(30deg);
 }
