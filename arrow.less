@@ -1,0 +1,37 @@
+body{
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+.X{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	border-top: 1px dashed #000;
+	z-index: 11;
+}
+.y{
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	border-right: 1px dashed #000;
+	z-index: 10;
+}
+
+@arrow_length: 200px;
+@arrow_angle: 120deg;
+@arrow_short_height: @arrow_length*cos(@arrow_angle - 90deg);
+
+div{
+	position: absolute;
+	z-index: 13;
+	left: e("calc(50% - ") @arrow_length/2 e(")");
+	top: e("calc(50% - ") @arrow_short_height/2 e(")");
+	width: @arrow_length;
+	height:@arrow_short_height;
+	background: rgba(0, 255, 0,0.1);
+	border-color:rgb(0, 255, 0);
+	border-width: 0 0 2px 2px;
+	border-style: solid;
+	transform: rotate(-30deg) skewX(30deg);
+}
