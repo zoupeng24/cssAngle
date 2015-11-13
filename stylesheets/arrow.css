@@ -1,0 +1,38 @@
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+.x{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 1px dashed #000;
+  z-index: 11;
+}
+.y{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  border-right: 1px dashed #000;
+  z-index: 10;
+}
+.arrow {
+  position: absolute;
+  z-index: 13;
+  left: calc(50% -  100px - 5px);
+  top: calc(50% -  86.60254038px );
+  width: 200px;
+  height: 173.20508076px;
+  background: rgba(0, 255, 0, 0.1);
+  border-color: #00ff00;
+  border-width: 0 0 10px 10px;
+  border-style: solid;
+  transform: rotate(-30deg) skewX(30deg);
+}
+#main_content {
+  margin: 40px auto;
+  min-height: 500px;
+  padding: 0;
+  position: relative;
+}
